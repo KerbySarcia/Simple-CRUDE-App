@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>CRUDE APP</title>
+</head>
+<body>
+    <main>
+        <div class="input-section">
+            <div>
+                <div class="name-age">
+                    <div class="name">
+                        <h2>Name</h2>
+                        <input type="text" id="name-input">
+                    </div>
+                    <div class="age">
+                        <h2>Age</h2>
+                        <input type="number" id="age-input">
+                    </div>
+                </div>
+                <div class="address-gender">
+                    <div class="address">
+                        <h2>Address</h2>
+                        <input type="text" id="address-input">
+                    </div>
+                    <div class="gender">
+                        <h2>Gender</h2>
+                        <input type="text" id="gender-input">
+                    </div>
+                </div>
+            </div>
+            <div><button class="add" onclick="addData()">Add</button></div>       
+        </div>
+
+        <div class="table-section">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                    <th>Gender</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <div class="modal-container">
+        <div class="modal">
+            <div>
+                <div class="name-age">
+                    <div class="name">
+                        <h2>Name</h2>
+                        <input type="text" id="name-input-modal">
+                    </div>
+                    <div class="age">
+                        <h2>Age</h2>
+                        <input type="number" id="age-input-modal">
+                    </div>
+                </div>
+                <div class="address-gender">
+                    <div class="address">
+                        <h2>Address</h2>
+                        <input type="text" id="address-input-modal">
+                    </div>
+                    <div class="gender">
+                        <h2>Gender</h2>
+                        <input type="text" id="gender-input-modal">
+                    </div>
+                </div>
+            </div>
+            <div class="button-modal">
+                <button class="add" id="updateBtn" onclick="updateInfo()">Update</button>
+                <button class="delete" id="deleteBtn" onclick="deleteData(this)">Delete</button>
+            </div>  
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
